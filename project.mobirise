@@ -810,7 +810,7 @@
                 "customStyle7": "display-7",
                 "customStyleTitle": "display-5",
                 "caption": "Type caption here",
-                "active": true
+                "active": false
               },
               {
                 "tags": "Wonderful",
@@ -854,9 +854,9 @@
               },
               {
                 "tags": "Awesome",
-                "bestSeller": false,
-                "onSale": false,
-                "oldPrice": false,
+                "bestSeller": true,
+                "onSale": true,
+                "oldPrice": true,
                 "itemTitle": "Red Snapback",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br>Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
@@ -870,7 +870,7 @@
                 "customStyle7": "display-7",
                 "customStyleTitle": "display-5",
                 "caption": "Type caption here",
-                "active": false
+                "active": true
               },
               {
                 "tags": "Responsive",
