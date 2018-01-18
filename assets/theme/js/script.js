@@ -6,7 +6,7 @@
         var e = document.createElement("section");
         e.id = "top-1";
         e.className = "engine";
-        e.innerHTML = '<a href="https://mobirise.info">Mobirise</a> Mobirise v4.5.4';
+        e.innerHTML = '<a href="https://mobirise.me">Mobirise</a> Mobirise v4.5.5';
         document.body.insertBefore(e, document.body.childNodes[0]);
     }
 }();
