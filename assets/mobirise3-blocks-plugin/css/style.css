@@ -2453,11 +2453,11 @@
     color: #000;
     opacity: 1; }
   .extTestimonials1 .carousel-control.left {
-    margin-left: 0.5rem; }
+    margin-left: 0.5rem !important; }
     .extTestimonials1 .carousel-control.left .icon-prev {
       font-size: 60px; }
   .extTestimonials1 .carousel-control.right {
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem !important; }
     .extTestimonials1 .carousel-control.right .icon-next {
       font-size: 60px; }
 .extTestimonials1 .carousel-inner > .active {
