@@ -856,147 +856,48 @@ body {
 .dropup .dropdown-toggle::after {
   display: none;
 }
-.cid-qKLPddJ95M {
-  padding-top: 120px;
-  background-image: url("../../../assets/images/background8.jpg");
-}
-.cid-qKLPddJ95M .container {
-  margin-bottom: 15%;
-}
-.cid-qKLPddJ95M .content-container .btn-bgr {
-  z-index: 0;
-}
-.cid-qKLPddJ95M .container-boxes {
+.cid-qKLPIg94Tu {
+  padding-top: 90px;
   padding-bottom: 90px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: stretch;
-  background-color: #f4f8fa;
-}
-.cid-qKLPddJ95M .icon-block-top span {
-  background-color: #188ef4;
-  padding: 1.5rem;
-  position: absolute;
-  border-radius: 50%;
-  margin-top: -2.5rem;
-  top: 0;
-}
-.cid-qKLPddJ95M .box-item {
-  position: relative;
-  box-shadow: #d2d2d2 0px 0px 15px;
-  border-radius: 3px;
-  margin-right: 1.5rem;
-  width: 29%;
-  padding: 2.5rem;
-}
-.cid-qKLPddJ95M .box-item:first-child {
-  background-color: #ffffff;
-  margin-top: -150px;
-}
-.cid-qKLPddJ95M .box-item:nth-child(2) {
   background-color: #ffffff;
 }
-.cid-qKLPddJ95M .box-item:last-child {
-  background-color: #ffffff;
-  margin-right: 0;
+.cid-qKLPIg94Tu .mbr-overlay {
+  background: #efefef;
 }
-.cid-qKLPddJ95M .mbr-text,
-.cid-qKLPddJ95M .box-item-text {
-  color: #8d97ad;
+.cid-qKLPIg94Tu .card {
+  padding: 1rem 1rem 2rem 1rem;
 }
-.cid-qKLPddJ95M .box-list {
-  padding-left: 0;
-  list-style: none;
-  margin-bottom: 0;
-}
-.cid-qKLPddJ95M .box-list li {
-  border-bottom: 1px solid;
-  padding: 10px 0 5px;
-}
-.cid-qKLPddJ95M .box-list li:last-child {
-  border-bottom: none;
-}
-.cid-qKLPddJ95M .box-list li span {
-  float: right;
-  text-align: right;
-  padding-left: 0.5rem;
-}
-.cid-qKLPddJ95M .media-content {
-  -webkit-flex-basis: initial;
-  flex-basis: initial;
-}
-@media (min-width: 992px) {
-  .cid-qKLPddJ95M .box-item {
-    margin-top: -150px;
-    max-width: 400px;
-  }
-}
-@media (max-width: 767px) {
-  .cid-qKLPddJ95M .p-descr {
-    margin-bottom: 4rem;
-  }
-}
-@media (max-width: 991px) {
-  .cid-qKLPddJ95M .box-item {
-    margin-bottom: 4rem;
-    margin-right: 0;
-    margin-top: 0;
-    width: 90%;
-  }
-  .cid-qKLPddJ95M .box-item:last-child {
-    margin-bottom: 0;
-  }
-  .cid-qKLPddJ95M .content-container {
-    -webkit-flex-basis: 90%;
-    flex-basis: 90%;
-  }
-  .cid-qKLPddJ95M .box-item:first-child {
-    margin-top: -100px;
-  }
-}
-.cid-qKLOP1uWot {
-  background-color: #cfeef1;
-  overflow: hidden !important;
-}
-.cid-qKLOP1uWot .container-fluid {
-  padding: 0 5rem;
-}
-.cid-qKLOP1uWot .img-block {
-  align-self: center;
-}
-.cid-qKLOP1uWot .mbr-section-title {
-  padding-bottom: 2rem;
-  color: #3e4555;
-}
-.cid-qKLOP1uWot .mbr-section-subtitle {
-  color: #3e4555;
-  font-weight: 400;
-}
-.cid-qKLOP1uWot .mbr-figure {
-  border-radius: .25rem;
+.cid-qKLPIg94Tu .card-img {
+  padding: 0;
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   overflow: hidden;
 }
-@media (max-width: 1199px) {
-  .cid-qKLOP1uWot .mbr-figure img {
-    width: 100%;
-  }
+.cid-qKLPIg94Tu .card-box {
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  background: #ffffff;
+  padding: 2rem;
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
 }
-@media (max-width: 991px) {
-  .cid-qKLOP1uWot .container-fluid {
-    padding: 0 1rem;
+.cid-qKLPIg94Tu .mbr-text {
+  color: #8d97ad;
+}
+.cid-qKLPIg94Tu .mbr-section-subtitle {
+  color: #8d97ad;
+}
+.cid-qKLPIg94Tu .mbr-section-btn {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  .cid-qKLPIg94Tu .card-title {
+    text-align: center;
   }
-  .cid-qKLOP1uWot .mbr-figure {
-    margin-top: 1rem;
-  }
-  .cid-qKLOP1uWot .mbr-section-title {
-    text-align: center !important;
-  }
-  .cid-qKLOP1uWot .mbr-section-subtitle {
-    text-align: center !important;
-  }
-  .cid-qKLOP1uWot .mbr-section-btn {
-    text-align: center !important;
+  .cid-qKLPIg94Tu p.mbr-text,
+  .cid-qKLPIg94Tu p.date {
+    text-align: center;
   }
 }
