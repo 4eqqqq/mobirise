@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "Site-02-22_1425",
+    "name": "Site-02-21_1556",
     "currentPage": "index.html",
     "theme": {
       "name": "extendedamp",
@@ -28,13 +28,13 @@
         "isRoundedButtons": false
       },
       "additionalSetColors": [
-        "#15181b"
+        "#f6efe9"
       ]
     },
-    "path": "@PROJECT_PATH@",
     "versionFirst": "4.6.5",
-    "uniqCompNum": 25,
+    "uniqCompNum": 109,
     "versionPublish": "4.6.5",
+    "path": "@PROJECT_PATH@",
     "screenshot": "screenshot.png"
   },
   "pages": {
@@ -58,79 +58,115 @@
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
-            ".mbr-overlay": {
-              "background-color": "@overlayColor",
-              "opacity": "@overlayOpacity"
+            ".mbr-row": {
+              "align-items": "center"
             },
-            ".mbr-section-title": {
-              "padding": "0"
+            "& when (@flexDirection)": {
+              ".mbr-row": {
+                "flex-direction": "row-reverse"
+              }
             },
-            ".carousel-img": {
+            ".image-block": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            "amp-img": {
               "width": "100%",
-              "text-align": "center",
-              "margin": "0"
+              "margin": "0 auto",
+              "text-align": "center"
             },
-            ".mbr-section-title, .mbr-section-subtitle": {
-              "line-height": "1"
-            },
-            ".section-subtitle": {
-              "padding-bottom": "0",
-              "margin": "0"
-            },
-            ".text-block": {
-              "margin": "auto"
-            },
-            ".slider-box": {
-              "margin-top": "1.5rem"
-            },
-            "amp-fit-text": {
-              "white-space": "normal",
-              "width": "600px"
-            },
-            ".text-wrap": {
-              "padding": "2rem",
-              "position": "absolute",
-              "top": "0",
-              "left": "0",
-              ".text-content": {
-                "padding": "2rem",
-                "background": "@cardsBg",
-                "word-break": "break-all",
-                "overflow": "hidden"
+            "& when not (@showButtons)": {
+              ".mbr-text": {
+                "padding-bottom": "0",
+                "margin-bottom": "0"
               }
             },
-            ".card-text": {
-              "padding": "0",
-              "margin": "0"
-            },
-            ".card-signature": {
-              "padding": "2rem 0 0 0",
-              "margin": "0"
-            },
-            ".card-info": {
-              "color": "#a2a0a0",
-              "padding": "0",
-              "margin": "0",
-              "& when not (@showSignature)": {
-                "padding-top": "2rem"
+            "@media (max-width: 767px)": {
+              ".mbr-section-subtitle, .mbr-text": {
+                "text-align": "center"
               }
             },
-            ".card-img": {
-              "margin-bottom": "2rem",
-              "amp-img": {
-                "border-radius": "50%",
-                "width": "50%",
-                "margin": "auto",
-                "img": {
-                  "border-radius": "50%"
+            "@media (max-width: 991px)": {
+              ".image-block": {
+                "padding": "0 !important",
+                "margin-bottom": "1.5rem !important"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".text-block": {
+                "& when not (@flexDirection)": {
+                  "padding-left": "4rem"
+                },
+                "& when (@flexDirection)": {
+                  "padding-right": "4rem"
                 }
               }
             }
           },
-          "_name": "testimonials-carousel6",
-          "_customHTML": "<section class=\"carousel1 \" group=\"Carousels & Sliders\" plugins=\"amp-main, amp-carousel, amp-fit-text\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Signature\" name=\"showSignature\" checked>\n        <input type=\"checkbox\" title=\"Show Info\" name=\"showInfo\" checked>  \n\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#fff7d2\">            \n        <input type=\"range\" inline title=\"Cards Max Height\" name=\"carouselHeight\" min=\"200\" max=\"1000\" step=\"10\" value=\"530\">\n        <select title=\"Reviews\" name=\"reviewsAmount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#e2efdc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#1d8c91\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay\"></div>\n    <div class=\"container\">\n        <div class=\"text-block mbr-col-sm-12 mbr-col-md-10\">\n            <h2 class=\"mbr-section-subtitle mbr-fonts-style align-center mbr-white\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-subtitle\">\n                 Testimonials Carousel\n            </h2>\n            <p class=\"mbr-fonts-style mbr-text section-subtitle align-center mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".section-subtitle\">\n                Testimonials carousel with cards of the different height. Use block parameters to change cards max height. <br>The contents of the cards will be aligned in the top.\n            </p>\n        </div>\n        <div class=\"slider-box\">\n            <amp-carousel class=\"carousel\" height=\"{{carouselHeight}}\" layout=\"fixed-height\" type=\"carousel\">\n\n                <amp-fit-text height=\"{{carouselHeight}}\" width=\"400\">\n                    <div class=\"text-wrap\">\n                        <div class=\"text-content\">\n                            <div class=\"card-img\">\n                                <amp-img src=\"@PROJECT_PATH@/assets/images/face1.jpg\" layout=\"responsive\" width=\"530\" height=\"530\" alt=\"Mobirise\">\n                                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/face1.jpg\" alt=\"Mobirise\">\n                                </amp-img>\n                            </div>\n                            <p class=\"mbr-fonts-style mbr-text card-text align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">\n                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, qui, accusamus! </p>\n                            <p class=\"mbr-fonts-style mbr-text card-signature mbr-bold align-center\" mbr-if=\"showSignature\" mbr-theme-style=\"display-7\" data-app-selector=\".card-signature\">John Smith</p>\n                            <p class=\"mbr-fonts-style mbr-text card-info align-center\" mbr-if=\"showInfo\" mbr-theme-style=\"display-4\" data-app-selector=\".card-info\">Developer</p>\n                        </div>\n                    </div>\n                </amp-fit-text>    \n                \n                <amp-fit-text height=\"{{carouselHeight}}\" width=\"400\" mbr-class=\"{'super-hide': reviewsAmount < 2}\">\n                    <div class=\"text-wrap\">\n                        <div class=\"text-content\">\n                            <div class=\"card-img\">\n                                <amp-img src=\"@PROJECT_PATH@/assets/images/face1.jpg\" layout=\"responsive\" width=\"530\" height=\"530\" alt=\"Mobirise\">\n                                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/face1.jpg\" alt=\"Mobirise\">\n                                </amp-img>\n                            </div>\n                            <p class=\"mbr-fonts-style mbr-text card-text align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">\n                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, qui, accusamus!</p>\n                           <p class=\"mbr-fonts-style mbr-text card-signature mbr-bold align-center\" mbr-if=\"showSignature\" mbr-theme-style=\"display-7\" data-app-selector=\".card-signature\">John Smith</p>\n                            <p class=\"mbr-fonts-style mbr-text card-info align-center\" mbr-if=\"showInfo\" mbr-theme-style=\"display-4\" data-app-selector=\".card-info\">Developer</p>\n                        </div>\n                    </div>\n                </amp-fit-text>  \n\n                <amp-fit-text height=\"{{carouselHeight}}\" width=\"400\" mbr-class=\"{'super-hide': reviewsAmount < 3}\">\n                    <div class=\"text-wrap\">\n                        <div class=\"text-content\">\n                            <div class=\"card-img\">\n                                <amp-img src=\"@PROJECT_PATH@/assets/images/face1.jpg\" layout=\"responsive\" width=\"530\" height=\"530\" alt=\"Mobirise\">\n                                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/face1.jpg\" alt=\"Mobirise\">\n                                </amp-img>\n                            </div>\n                            <p class=\"mbr-fonts-style mbr-text card-text align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">\n                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, qui, accusamus!</p>\n                           <p class=\"mbr-fonts-style mbr-text card-signature mbr-bold align-center\" mbr-if=\"showSignature\" mbr-theme-style=\"display-7\" data-app-selector=\".card-signature\">John Smith</p>\n                            <p class=\"mbr-fonts-style mbr-text card-info align-center\" mbr-if=\"showInfo\" mbr-theme-style=\"display-4\" data-app-selector=\".card-info\">Developer</p>\n                        </div>\n                    </div>\n                </amp-fit-text>  \n                <amp-fit-text height=\"{{carouselHeight}}\" width=\"400\" mbr-class=\"{'super-hide': reviewsAmount < 4}\">\n                    <div class=\"text-wrap\">\n                        <div class=\"text-content\">\n                            <div class=\"card-img\">\n                                <amp-img src=\"@PROJECT_PATH@/assets/images/face1.jpg\" layout=\"responsive\" width=\"530\" height=\"530\" alt=\"Mobirise\">\n                                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/face1.jpg\" alt=\"Mobirise\">\n                                </amp-img>\n                            </div>\n                            <p class=\"mbr-fonts-style mbr-text card-text align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">\n                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, qui, accusamus!</p>\n                           <p class=\"mbr-fonts-style mbr-text card-signature mbr-bold align-center\" mbr-if=\"showSignature\" mbr-theme-style=\"display-7\" data-app-selector=\".card-signature\">John Smith</p>\n                            <p class=\"mbr-fonts-style mbr-text card-info align-center\" mbr-if=\"showInfo\" mbr-theme-style=\"display-4\" data-app-selector=\".card-info\">Developer</p>\n                        </div>\n                    </div>\n                </amp-fit-text>\n                <amp-fit-text height=\"{{carouselHeight}}\" width=\"400\" mbr-class=\"{'super-hide': reviewsAmount < 5}\">\n                    <div class=\"text-wrap\">\n                        <div class=\"text-content\">\n                            <div class=\"card-img\">\n                                <amp-img src=\"@PROJECT_PATH@/assets/images/face1.jpg\" layout=\"responsive\" width=\"530\" height=\"530\" alt=\"Mobirise\">\n                                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/face1.jpg\" alt=\"Mobirise\">\n                                </amp-img>\n                            </div>\n                            <p class=\"mbr-fonts-style mbr-text card-text align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">\n                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, qui, accusamus!</p>\n                           <p class=\"mbr-fonts-style mbr-text card-signature mbr-bold align-center\" mbr-if=\"showSignature\" mbr-theme-style=\"display-7\" data-app-selector=\".card-signature\">John Smith</p>\n                            <p class=\"mbr-fonts-style mbr-text card-info align-center\" mbr-if=\"showInfo\" mbr-theme-style=\"display-4\" data-app-selector=\".card-info\">Developer</p>\n                        </div>\n                    </div>\n                </amp-fit-text>\n                <amp-fit-text height=\"{{carouselHeight}}\" width=\"400\" mbr-class=\"{'super-hide': reviewsAmount < 6}\">\n                    <div class=\"text-wrap\">\n                        <div class=\"text-content\">\n                            <div class=\"card-img\">\n                                <amp-img src=\"@PROJECT_PATH@/assets/images/face1.jpg\" layout=\"responsive\" width=\"530\" height=\"530\" alt=\"Mobirise\">\n                                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/face1.jpg\" alt=\"Mobirise\">\n                                </amp-img>\n                            </div>\n                            <p class=\"mbr-fonts-style mbr-text card-text align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".card-text\">\n                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, qui, accusamus!</p>\n                           <p class=\"mbr-fonts-style mbr-text card-signature mbr-bold align-center\" mbr-if=\"showSignature\" mbr-theme-style=\"display-7\" data-app-selector=\".card-signature\">John Smith</p>\n                            <p class=\"mbr-fonts-style mbr-text card-info align-center\" mbr-if=\"showInfo\" mbr-theme-style=\"display-4\" data-app-selector=\".card-info\">Developer</p>\n                        </div>\n                    </div>\n                </amp-fit-text>\n            </amp-carousel>\n        </div>\n    </div>\n</section>",
-          "_cid": "qKJZ1SXZEP",
-          "_anchor": "testimonials-carousel6-o",
+          "_name": "features11",
+          "_customHTML": "<section class=\"features11\" group=\"Features\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"5\" step=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"5\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked=\"\">\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"flexDirection\" checked=\"\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n    <!-- End block parameters -->\n  </mbr-parameters>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center main-row\">\n            <div class=\"image-block mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6\">\n                <amp-img src=\"@PROJECT_PATH@/assets/images/13.jpg\" layout=\"responsive\" width=\"539.9979155810319\" height=\"611\" alt=\"Mobirise\">\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/13.jpg\" alt=\"Mobirise\">\n                </amp-img>\n            </div>\n            <div class=\"text-block mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6\">\n                <h2 class=\"mbr-section-title mbr-fonts-style mbr-bold align-center\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    01\n                </h2>\n                <h3 class=\"mbr-section-subtitle mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    Make your site unique\n                </h3>\n                <p class=\"mbr-fonts-style mbr-text align-center\" mbr-theme-style=\"display-6\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                Mobirise Website Builder offers a huge collection of website blocks in several themes, and though these blocks are pre-made, they are flexible. You can combine blocks in different ways on your pages.\n                </p>\n                <div mbr-buttons=\"\" class=\"mbr-section-btn align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                    <a class=\"btn-underline text-primary\" href=\"https://mobirise.com\">\n                        LEARN MORE\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n",
+          "_cid": "qKLyDzhTFc",
+          "_anchor": "features11-2z",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".main-row": {
+              "align-items": "center",
+              "justify-content": "flex-start",
+              "margin": "0"
+            },
+            "& when (@flexDirection)": {
+              ".main-row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".image-block": {
+              "display": "flex",
+              "align-items": "center"
+            },
+            "amp-img": {
+              "width": "100%",
+              "margin": "0 auto",
+              "text-align": "center"
+            },
+            ".text-block": {
+              "padding": "2rem 0"
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-section-subtitle, .mbr-text,.mbr-section-btn": {
+                "text-align": "center"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-block": {
+                "padding": "0 !important"
+              },
+              ".text-block": {
+                "padding": "2rem 2rem"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".image-block": {
+                "width": "50%"
+              }
+            }
+          },
+          "_name": "features12",
+          "_customHTML": "<section class=\"features12\" group=\"Features\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked=\"\">\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"flexDirection\" checked=\"\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#f6efe9\" selected=\"\">\n        </fieldset>\n    <!-- End block parameters -->\n  </mbr-parameters>\n    <!-- <div class=\"container\"> -->\n        <div class=\"mbr-row main-row\">\n            <div class=\"image-block \">\n                <!-- mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6 -->\n                <amp-img src=\"@PROJECT_PATH@/assets/images/10.jpg\" layout=\"responsive\" width=\"951\" height=\"634\" alt=\"Mobirise\">\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/10.jpg\" alt=\"Mobirise\">\n                </amp-img>\n            </div>\n            <!-- <div class=\"mbr-col-lg-1\"></div> -->\n            <div class=\"text-block mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6\">\n                <div class=\"mbr-row mbr-justify-content-center\">\n                    <div class=\"mbr-col-lg-10\">\n                        <h2 class=\"mbr-section-title mbr-fonts-style mbr-bold align-left\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                            01\n                        </h2>\n                        <h3 class=\"mbr-section-subtitle mbr-fonts-style align-left\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                            Make your site unique\n                        </h3>\n                        <p class=\"mbr-fonts-style mbr-text align-left\" mbr-theme-style=\"display-6\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                        Mobirise Website Builder offers a huge collection of website blocks in several themes, and though these blocks are pre-made, they are flexible. You can combine blocks in different ways on your pages.\n                        </p>\n                        <div mbr-buttons=\"\" class=\"mbr-section-btn align-left\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                            <a class=\"btn-underline text-black\" href=\"https://mobirise.com\">\n                                LEARN MORE\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    <!-- </div> -->\n</section>\n",
+          "_cid": "qKLyGJDXBJ",
+          "_anchor": "features12-30",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
