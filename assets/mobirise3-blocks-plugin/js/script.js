@@ -91,37 +91,32 @@
 
 
   // AFTER PUBLISH
-function clickHandlerClients(e){
-  console.log(e);
-  e.stopPropagation();
-  e.preventDefault();
 
-  var itemIndex = $(e.target).attr('data-slide-to'),
-      carInner = $(e.target).closest('.boxed-slider'),
-      carOl=$(e.target).closest('.carousel-indicators');
+  // fix clients bugs
+  function clickHandlerClients(e){
+    e.stopPropagation();
+    e.preventDefault();
 
-  $(carOl).find('li').each(function(){
-    $(this).removeClass('active');
-  })
-  $(e.target).addClass('active');
-  $(carInner).find('.carousel-item').each(function(){
-    $(this).removeClass('active');
-  })
-  $($(carInner).find('.carousel-item')[itemIndex]).addClass('active');
-}
+    var itemIndex = $(e.target).attr('data-slide-to'),
+        carInner = $(e.target).closest('.boxed-slider'),
+        carOl=$(e.target).closest('.carousel-indicators');
 
-function clickPrev(e){
-  e.stopPropagation();
-  e.preventDefault();
-}
+    $(carOl).find('li').each(function(){
+      $(this).removeClass('active');
+    })
+    $(e.target).addClass('active');
+    $(carInner).find('.carousel-item').each(function(){
+      $(this).removeClass('active');
+    })
+    $($(carInner).find('.carousel-item')[itemIndex]).addClass('active');
+  }
+
+  function clickPrev(e){
+    e.stopPropagation();
+    e.preventDefault();
+  }
 
   if (!$('html').hasClass('is-builder')) {
-
-    // if($('section.extTestimonials5'.length > 0)){
-    //   $('section.extTestimonials5').each(function(){
-    //     $(this).find('.carousel-indicators').on('click',clickHandlerClients(e));
-    //   });
-    // }
     // extTestimonials cards height fix
     if ($('section.extTestimonials1:not(.extTestimonials5)').length > 0) {
       $(window).on('resize', function() {
@@ -191,20 +186,8 @@ function clickPrev(e){
         });
       }    
     });
-
+    // Clients carousel fix bugs
     if($('section.extTestimonials5').length>0){
-      // $('section.extTestimonials5').on('slide.bs.carousel', function() {
-      //     $('section.extTestimonials5').find('.carousel-indicators li').off('click');
-      // });
-
-      // $('section.extTestimonials5').on('slid.bs.carousel', function() {
-      //     $('section.extTestimonials5').find('.carousel-indicators li').on('click',function(){
-      //       var carousel = $(event.target).closest('.carousel');
-      //       clickHandlerClients(event);
-      //       event.stopPropagation();
-      //     });
-      // });
-
       $('section.extTestimonials5.carousel').each(function(){
           var $slider = $(this),
               controls = $slider.find('.carousel-control'),
