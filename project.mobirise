@@ -1,39 +1,35 @@
 {
   "settings": {
-    "name": "Site-03-26_1132",
+    "name": "Site-03-26_1723",
     "currentPage": "index.html",
     "theme": {
-      "name": "lightamp",
-      "title": "LightAMP",
+      "name": "mobirise-amp",
+      "title": "Mobirise AMP",
       "styling": {
-        "primaryColor": "#F9D5BD",
-        "secondaryColor": "#bbe0e2",
-        "successColor": "#c6e2ba",
-        "infoColor": "#f5edf6",
-        "warningColor": "#7F7E7E",
-        "dangerColor": "#fe8b8b",
+        "primaryColor": "#4ea2e3",
+        "secondaryColor": "#4addff",
+        "successColor": "#0dcd7b",
+        "infoColor": "#8282e7",
+        "warningColor": "#767676",
+        "dangerColor": "#a0a0a0",
         "mainFont": "Roboto",
-        "display1Font": "Reem Kufi",
-        "display1Size": 6,
-        "display2Font": "Reem Kufi",
-        "display2Size": 4,
-        "display5Font": "Reem Kufi",
-        "display5Size": 2.25,
-        "display6Font": "Roboto",
-        "display6Size": 1.3,
+        "display1Font": "Roboto",
+        "display1Size": 4.5,
+        "display2Font": "Roboto",
+        "display2Size": 2.2,
+        "display5Font": "Roboto",
+        "display5Size": 1.8,
         "display7Font": "Roboto",
         "display7Size": 1.1,
-        "display4Font": "Reem Kufi",
-        "display4Size": 1,
+        "display4Font": "Roboto",
+        "display4Size": 0.9,
         "isRoundedButtons": false
-      },
-      "additionalSetColors": []
+      }
     },
-    "versionFirst": "4.6.6",
-    "uniqCompNum": 54,
-    "versionPublish": "4.6.6",
     "path": "@PROJECT_PATH@",
-    "screenshot": "screenshot.png"
+    "versionFirst": "4.6.6",
+    "uniqCompNum": 1,
+    "versionPublish": "4.6.6"
   },
   "pages": {
     "index.html": {
@@ -50,36 +46,20 @@
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
+            "background-color": "@bgColor",
+            "h1": {
+              "margin-bottom": "20px"
             },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".container": {
-              "max-width": "~'@{maxWidth}%'"
-            },
-            "@media (max-width: 991px)": {
-              ".container": {
-                "min-width": "70% !important"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".container": {
-                "min-width": "100% !important"
-              }
-            },
-            ".mbr-section-subtitle": {
-              "color": "#7f7e7e"
-            },
-            ".pb2": {
-              "padding-bottom": "2rem"
+            ".wrapper": {
+              "text-align": "center"
             }
           },
-          "_name": "test2",
-          "_customHTML": "<section class=\"mbr-facebook-comments mbr-section\" group=\"Test\" plugins=\"amp-main, amp-facebook-comments\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"5\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"range\" inline title=\"Max Width\" name=\"maxWidth\" min=\"30\" max=\"100\" value=\"50\" step=\"1\">\n\n        <input type=\"range\" inline title=\"Number of Posts\" name=\"numpostsFacebook\" min=\"1\" max=\"10\" value=\"2\" step=\"1\">\n        <input type=\"text\" title=\"Link to Post\" name=\"linkPostFacebook\" value=\"https://4eqqqq.github.io/mobirise/\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#fbf5f1\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\" mbr-class=\"{'pb2':showSubtitle || showTitle}\">\n        <h2 class=\"mbr-fonts-style align-center mbr-bold mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            AMP Facebook Comments\n        </h2>\n        <h3 class=\"mbr-fonts-style align-center mbr-section-subtitle\" mbr-theme-style=\"display-6\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n            In Google Chrome facebook comments will be shown only when your site is online.\n        </h3>\n    </div>\n    <amp-facebook-comments height=\"9\" layout=\"fixed-height\" class=\"container\" data-numposts=\"{{numpostsFacebook}}\" data-href=\"{{linkPostFacebook}}\">\n    </amp-facebook-comments>\n</section>",
-          "_cid": "qNpwhxyv6n",
-          "_anchor": "test2-1h",
+          "_name": "social-share",
+          "_customHTML": "<section class=\"social-share\" group=\"Social\" plugins=\"amp-main,amp-social-share\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n                <input type=\"range\" inline title=\"Top\" name=\"iconSize\" min=\"10\" max=\"80\" value=\"67\" step=\"1\">\n\n        <input type=\"checkbox\" title=\"Email\" name=\"email\" checked>\n        <input type=\"checkbox\" title=\"Facebook\" name=\"facebook\" checked>\n        <input type=\"checkbox\" title=\"Google+\" name=\"gplus\" checked>\n        <input type=\"checkbox\" title=\"Linkedin\" name=\"linkedin\" checked>\n        <input type=\"checkbox\" title=\"Pinterest\" name=\"pinterest\" checked>\n        <input type=\"checkbox\" title=\"Tumblr\" name=\"tumblr\" checked>\n        <input type=\"checkbox\" title=\"Twitter\" name=\"twitter\" checked>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"wrapper\">\n        <h1 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n            Share this page\n        </h1>\n        <amp-social-share type=\"email\" mbr-if=\"email\" width=\"{{iconSize}}\" height=\"{{iconSize}}\"></amp-social-share>\n        <amp-social-share type=\"facebook\" mbr-if=\"facebook\" data-param-app_id=\"254325784911610\"></amp-social-share>\n        <amp-social-share type=\"gplus\" mbr-if=\"gplus\"></amp-social-share>\n        <amp-social-share type=\"linkedin\" mbr-if=\"linkedin\"></amp-social-share>\n        <amp-social-share type=\"pinterest\" mbr-if=\"pinterest\" data-param-media=\"https://ampbyexample.com/img/amp.jpg\"></amp-social-share>\n        <amp-social-share type=\"tumblr\" mbr-if=\"tumblr\"></amp-social-share>\n        <amp-social-share type=\"twitter\" mbr-if=\"twitter\"></amp-social-share>\n    </div>\n</section>",
+          "_cid": "qNpyqWahHN",
+          "_anchor": "social-share-0",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
