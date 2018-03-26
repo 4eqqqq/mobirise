@@ -30,7 +30,7 @@
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.6.6",
-    "uniqCompNum": 15,
+    "uniqCompNum": 29,
     "versionPublish": "4.6.6",
     "screenshot": "screenshot.png"
   },
@@ -119,23 +119,16 @@
             },
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
-            },
-            ".container-fluid": {
-              "width": "100%",
-              "padding-right": "15px",
-              "padding-left": "15px",
-              "margin-right": "auto",
-              "margin-left": "auto"
             }
           },
           "_name": "test2",
-          "_customHTML": "<section class=\"amp-facebook-comments mbr-section\" group=\"Instagram\" plugins=\"amp-main, amp-facebook-comments\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" condition=\"direction === 'row'\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"range\" inline=\"\" title=\"Cards Count\" name=\"cardsCount\" min=\"1\" max=\"8\" step=\"1\" value=\"4\">\n<!--         <select title=\"Direction\" name=\"direction\">\n            <option value=\"row\" selected>Row</option>\n            <option value=\"column\">Column</option>\n        </select> -->\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showCaption\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Spacing\" name=\"spacing\" min=\"0\" max=\"40\" step=\"1\" value=\"15\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\">\n        <h2 class=\"mbr-fonts-style align-center mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n            AMP Facebook Comments\n        </h2>\n        <h3 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n        </h3>\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"frame-wrapper\">\n                <amp-facebook-comments width=\"486\" height=\"657\" layout=\"responsive\" data-numposts=\"5\" data-href=\"http://www.directlyrics.com/adele-25-complete-album-lyrics-news.html\">\n                </amp-facebook-comments>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "qNnSyFv3n1",
+          "_customHTML": "                \n                \n<amp-facebook-comments width=\"486\" height=\"657\" layout=\"responsive\" data-numposts=\"5\" data-href=\"http://www.directlyrics.com/adele-25-complete-album-lyrics-news.html\">\n</amp-facebook-comments>\n\n\n<section class=\"amp-facebook-comments mbr-section\" group=\"Instagram\" plugins=\"amp-main, amp-facebook-comments\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        \n        <input type=\"range\" inline=\"\" title=\"Posts at a Time\" name=\"numposts\" min=\"1\" max=\"10\" value=\"5\" step=\"1\">\n        <input type=\"text\" title=\"Link to Post\" name=\"linkPost\" value=\"http://www.directlyrics.com/adele-25-complete-album-lyrics-news.html\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n<!--     <div class=\"container\">\n        <h2 class=\"mbr-fonts-style align-center mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n            AMP Facebook Comments\n        </h2>\n        <h3 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n        </h3> -->\n\n\n\n<!--         <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"frame-wrapper\">\n                <amp-facebook-comments width=\"486\" height=\"657\"\n                    layout=\"responsive\"\n                    data-numposts=\"5\"\n                    data-href=\"http://www.directlyrics.com/adele-25-complete-album-lyrics-news.html\">\n                </amp-facebook-comments>\n            </div>\n        </div> -->\n    <!-- </div> -->\n</section>",
+          "_cid": "qNo3bQU408",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
-          "_anchor": "test2-e"
+          "_anchor": "test2-s"
         },
         {
           "_styles": {
