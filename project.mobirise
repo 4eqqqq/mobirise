@@ -30,7 +30,7 @@
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.6.6",
-    "uniqCompNum": 63,
+    "uniqCompNum": 67,
     "versionPublish": "4.6.6",
     "screenshot": "screenshot.png"
   },
@@ -47,301 +47,54 @@
       "components": [
         {
           "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".image-block": {
-              "margin": "auto",
-              "width": "~\"@{imageSize}%\"",
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              }
-            },
-            "amp-img": {
-              "text-align": "center"
-            },
-            ".mbr-text": {
-              "margin": "0",
-              "padding": ".5rem 0",
-              "& when (@fullWidth)": {
-                "padding": ".5rem 15px"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".image-block": {
-                "width": "100% !important"
-              }
-            }
-          },
-          "_name": "image2",
-          "_customHTML": "<section class=\"image2\" group=\"Images &amp; Videos\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"2\" step=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"2\" step=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Width\" name=\"imageSize\" min=\"20\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showText\" checked=\"\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': fullWidth == false}\">\n        <div class=\"image-block\">\n            <amp-img src=\"@PROJECT_PATH@/assets/images/07.jpg\" layout=\"responsive\" class=\"mobirise-loader\" width=\"732\" height=\"488\" alt=\"Mobirise\">\n                <div placeholder=\"\">\n                    <div class=\"mobirise-spinner\">\n                        <em></em>\n                        <em></em>\n                        <em></em>\n                    </div>\n                </div>\n                <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/07.jpg\" alt=\"Mobirise\">\n            </amp-img>\n            <div class=\"mbr-figure-caption\" mbr-if=\"showText\">\n                <p mbr-text=\"\" class=\"mbr-text mbr-black align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                    Create FAST and MOBILE-FRIENDLY websites!\n                </p>\n            </div>\n        </div>\n    </div>\n</section>\n",
-          "_cid": "qNzKpqBC5k",
-          "_anchor": "image2-1k",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".image-block": {
-              "margin": "auto",
-              "width": "~\"@{videoSize}%\"",
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              }
-            },
-            "amp-img": {
-              "text-align": "center"
-            },
-            ".mbr-text": {
-              "margin": "0",
-              "padding": ".5rem 0",
-              "& when (@fullWidth)": {
-                "padding": ".5rem 15px"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".image-block": {
-                "width": "100% !important"
-              }
-            }
-          },
-          "_name": "image1",
-          "_customHTML": "<section class=\"image1\" group=\"Images &amp; Videos\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showText\" checked=\"\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': fullWidth == false}\">\n        <div class=\"image-block\">\n            <amp-img src=\"@PROJECT_PATH@/assets/images/background4.jpg\" layout=\"responsive\" class=\"mobirise-loader\" width=\"1419\" height=\"946\" alt=\"Mobirise\">\n                <div placeholder=\"\">\n                    <div class=\"mobirise-spinner\">\n                        <em></em>\n                        <em></em>\n                        <em></em>\n                    </div>\n                </div>\n                <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/background4.jpg\" alt=\"Mobirise\">\n            </amp-img>\n            <div class=\"mbr-figure-caption\" mbr-if=\"showText\">\n                <p mbr-text=\"\" class=\"mbr-text mbr-black align-center mbr-fonts-style\" mbr-theme-style=\"display-6\" data-app-selector=\".mbr-text\">\n                    Create FAST and MOBILE-FRIENDLY websites!\n                </p>\n            </div>\n        </div>\n    </div>\n</section>\n",
-          "_cid": "qNzKpDZ27K",
-          "_anchor": "image1-1l",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".image-block": {
-              "margin": "auto",
-              "width": "~\"@{videoSize}%\"",
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              },
-              "overflow": "hidden",
-              "amp-img": {
-                "margin-bottom": "-30%"
-              }
-            },
-            "amp-img": {
-              "text-align": "center"
-            },
-            ".mbr-text": {
-              "margin": "0",
-              "padding": ".5rem 0",
-              "& when (@fullWidth)": {
-                "padding": ".5rem 15px"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".image-block": {
-                "width": "100% !important"
-              }
-            },
-            "@media (max-width: 991px)": {
-              ".image-block": {
-                "amp-img": {
-                  "margin-bottom": "-40%"
-                }
-              }
-            }
-          },
-          "_name": "image3",
-          "_customHTML": "<section class=\"image3\" group=\"Images &amp; Videos\" plugins=\"amp-main,amp-fx-collection\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"2\" step=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"100\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showText\" checked=\"\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\">\n        <h3 class=\"mbr-section-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            Image with parallax effect\n        </h3>\n    </div>\n    <div mbr-class=\"{'container': fullWidth == false}\">\n        <div class=\"image-block\">\n            <amp-img src=\"@PROJECT_PATH@/assets/images/11.jpg\" layout=\"responsive\" amp-fx=\"parallax\" data-parallax-factor=\"1.2\" width=\"1110\" height=\"925\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                <div placeholder=\"\">\n                    <div class=\"mobirise-spinner\">\n                        <em></em>\n                        <em></em>\n                        <em></em>\n                    </div>\n                </div>\n                <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/11.jpg\" alt=\"Mobirise\">\n            </amp-img>\n        </div>\n        <div class=\"mbr-figure-caption\" mbr-if=\"showText\">\n            <p mbr-text=\"\" class=\"mbr-text mbr-black align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n               Open the page in your browser to see the parallax effect !\n            </p>\n        </div>\n    </div>\n</section>\n",
-          "_cid": "qNzKq412qH",
-          "_anchor": "image3-1m",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "& when not (@fullWidth)": {
+            "& when not (@fullScreen)": {
               "padding-top": "(@paddingTop * 15px)",
               "padding-bottom": "(@paddingBottom * 15px)"
             },
-            "background-color": "@bgColor",
-            ".video-title": {
-              "width": "100%"
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
             },
-            ".mbr-text": {
-              "margin": "0",
-              "color": "#7f7e7e"
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".carousel-img": {
+              "width": "100%",
+              "text-align": "center",
+              "margin": "0"
+            },
+            ".container-fluid": {
+              "max-width": "100%",
+              "padding": "0"
+            },
+            "& when (@showTitle)": {
+              ".mbr-section-title": {
+                "line-height": "1"
+              }
+            },
+            "& when (@showSubtitle)": {
+              ".mbr-text": {
+                "padding-bottom": "0",
+                "margin": "0",
+                "color": "#a2a0a0"
+              }
             },
             "& when (@showTitle), (@showSubtitle)": {
-              "& when (@fullWidth)": {
-                ".video-title": {
-                  "padding": "1rem 0"
-                }
+              ".text-block": {
+                "margin": "auto"
               },
-              "& when not (@fullWidth)": {
-                ".video-title": {
-                  "padding-bottom": "3rem"
-                }
-              }
-            },
-            ".video-block": {
-              "margin": "auto",
-              "width": "~\"@{videoSize}%\"",
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".video-block": {
-                "width": "100% !important"
+              ".slider-box": {
+                "margin-top": "3rem"
               }
             }
           },
-          "_name": "youtube1",
-          "_customHTML": "<section class=\"youtube1\" group=\"Images &amp; Videos\" plugins=\"amp-main,amp-youtube\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"range\" inline=\"\" title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"text\" title=\"Youtube Video URL\" name=\"videoUrl\" value=\"http://www.youtube.com/watch?v=lBTCB7yLs8Y\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': fullWidth == false}\">\n        <div class=\"video-title mbr-col-sm-12 align-center\" mbr-if=\"showTitle || showSubtitle\">\n            <h2 class=\"mbr-section-title mbr-fonts-style mbr-light\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .video-title\">\n                Youtube Video\n            </h2>\n            <h3 class=\"mbr-fonts-style mbr-text\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-6\" data-app-selector=\".mbr-text\">\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n            </h3>\n        </div>\n        <div class=\"video-block\">\n            <amp-youtube width=\"16\" height=\"9\" layout=\"responsive\" class=\"mobirise-loader\" data-videoid=\"lBTCB7yLs8Y\">\n                <div placeholder=\"\">\n                    <div class=\"mobirise-spinner\">\n                        <em></em>\n                        <em></em>\n                        <em></em>\n                    </div>\n                </div>\n            </amp-youtube>\n        </div>\n    </div>\n</section>",
-          "_cid": "qNzKqs24xX",
-          "_anchor": "youtube1-1n",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "& when not (@fullWidth)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "background-color": "@bgColor",
-            ".video-title": {
-              "width": "100%"
-            },
-            ".mbr-text": {
-              "margin": "0",
-              "color": "#7f7e7e"
-            },
-            "& when (@showTitle), (@showSubtitle)": {
-              "& when (@fullWidth)": {
-                ".video-title": {
-                  "padding": "1rem 0"
-                }
-              },
-              "& when not (@fullWidth)": {
-                ".video-title": {
-                  "padding-bottom": "3rem"
-                }
-              }
-            },
-            ".video-block": {
-              "margin": "auto",
-              "width": "~\"@{videoSize}%\"",
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".video-block": {
-                "width": "100% !important"
-              }
-            }
-          },
-          "_name": "youtube2",
-          "_customHTML": "<section class=\"youtube2\" group=\"Images &amp; Videos\" plugins=\"amp-main,amp-youtube\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"text\" title=\"Youtube Video URL\" name=\"videoUrl\" value=\"http://www.youtube.com/watch?v=lBTCB7yLs8Y\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': fullWidth == false}\">\n        <div class=\"video-title mbr-col-sm-12 align-center\">\n            <h2 class=\"mbr-section-title mbr-fonts-style mbr-light\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .video-title\">\n                Youtube Video\n            </h2>\n            <h3 class=\"mbr-fonts-style mbr-text\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-6\" data-app-selector=\".mbr-text\">\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n            </h3>\n        </div>\n        <div class=\"video-block\">\n            <amp-youtube width=\"16\" height=\"9\" layout=\"responsive\" data-videoid=\"lBTCB7yLs8Y\" class=\"mobirise-loader\">\n                <div placeholder=\"\">\n                    <div class=\"mobirise-spinner\">\n                        <em></em>\n                        <em></em>\n                        <em></em>\n                    </div>\n                </div>\n            </amp-youtube>\n        </div>\n    </div>\n</section>",
-          "_cid": "qNzKr5NnVV",
-          "_anchor": "youtube2-1o",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "& when not (@fullWidth)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "background-color": "@bgColor",
-            ".video-title": {
-              "width": "100%"
-            },
-            "& when (@fullWidth) and (@showTitle)": {
-              ".mbr-section-title": {
-                "padding": "1rem 0"
-              }
-            },
-            "& when not (@fullWidth) and (@showTitle)": {
-              ".mbr-section-title": {
-                "padding-bottom": "3rem"
-              }
-            },
-            ".video-block": {
-              "margin": "auto",
-              "width": "~\"@{videoSize}%\"",
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".video-block": {
-                "width": "100% !important"
-              }
-            }
-          },
-          "_name": "vimeo1",
-          "_customHTML": "<section class=\"vimeo1\" group=\"Images &amp; Videos\" plugins=\"amp-main,amp-vimeo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"text\" title=\"Vimeo Video URL\" name=\"videoUrl\" value=\"https://vimeo.com/60855585\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': fullWidth == false}\">\n        <div class=\"video-title mbr-col-sm-12 align-center\">\n            <h2 class=\"mbr-section-title mbr-fonts-style mbr-light\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .video-title\">\n                Vimeo Video\n            </h2>\n        </div>\n        <div class=\"video-block\">\n            <amp-vimeo data-videoid=\"60855585\" layout=\"responsive\" width=\"16\" height=\"9\" class=\"mobirise-loader\">\n                <div placeholder=\"\">\n                    <div class=\"mobirise-spinner\">\n                        <em></em>\n                        <em></em>\n                        <em></em>\n                    </div>\n                </div>\n            </amp-vimeo>\n        </div>\n    </div>\n</section>\n",
-          "_cid": "qNzKrtrWRC",
-          "_anchor": "vimeo1-1p",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "& when not (@fullWidth)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "background-color": "@bgColor",
-            ".video-title": {
-              "width": "100%"
-            },
-            "& when (@fullWidth) and (@showTitle)": {
-              ".mbr-section-title": {
-                "padding": "1rem 0"
-              }
-            },
-            "& when not (@fullWidth) and (@showTitle)": {
-              ".mbr-section-title": {
-                "padding-bottom": "3rem"
-              }
-            },
-            ".video-block": {
-              "margin": "auto",
-              "width": "~\"@{videoSize}%\"",
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".video-block": {
-                "width": "100% !important"
-              }
-            }
-          },
-          "_name": "vimeo2",
-          "_customHTML": "<section class=\"vimeo2\" group=\"Images &amp; Videos\" plugins=\"amp-main,amp-vimeo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"text\" title=\"Vimeo Video URL\" name=\"videoUrl\" value=\"https://vimeo.com/60855585\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': fullWidth == false}\">\n        <div class=\"video-title mbr-col-sm-12 align-center\">\n            <h2 class=\"mbr-section-title mbr-fonts-style mbr-light\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .video-title\">\n                Vimeo Video\n            </h2>\n        </div>\n        <div class=\"video-block\">\n            <amp-vimeo data-videoid=\"60855585\" layout=\"responsive\" width=\"16\" height=\"9\" class=\"mobirise-loader\">\n            </amp-vimeo>\n        </div>\n    </div>\n</section>\n",
-          "_cid": "qNzKrGE3Zv",
-          "_anchor": "vimeo2-1q",
+          "_name": "carousel1",
+          "_customHTML": "<section class=\"carousel1 slider\" group=\"Carousels &amp; Sliders\" plugins=\"amp-main, amp-carousel\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked=\"\">\n        <select title=\"Images\" name=\"imagesAmount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected=\"\">6</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n        <input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div class=\"container-fluid\">\n        <div class=\"text-block mbr-col-sm-12 mbr-col-md-10\" mbr-if=\"showTitle || showSubtitle\">\n            <h2 class=\"mbr-section-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                 Carousel With Images\n            </h2>\n            <p class=\"mbr-fonts-style mbr-text align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit omnis us, pur! Molestiae voluptate ipsam ab earum unde?\n            </p>\n        </div>\n        <div class=\"slider-box\">\n            <amp-carousel class=\"carousel\" height=\"400\" layout=\"fixed-height\" type=\"carousel\">\n                <amp-img class=\"carousel-img mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/01.jpg\" height=\"400\" width=\"600\" alt=\"Mobirise\">\n                    <div placeholder=\"\">\n                        <div class=\"mobirise-spinner\">\n                            <em></em>\n                            <em></em>\n                            <em></em>\n                        </div>\n                    </div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/01.jpg\" alt=\"Mobirise\">\n                </amp-img>\n                <amp-img class=\"carousel-img mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/02.jpg\" mbr-class=\"{'super-hide': imagesAmount < 2}\" height=\"400\" width=\"599.2509363295881\" alt=\"Mobirise\">\n                    <div placeholder=\"\">\n                        <div class=\"mobirise-spinner\">\n                            <em></em>\n                            <em></em>\n                            <em></em>\n                        </div>\n                    </div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/02.jpg\" alt=\"Mobirise\">\n                </amp-img>\n                <amp-img class=\"carousel-img mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/03.jpg\" mbr-class=\"{'super-hide': imagesAmount < 3}\" height=\"400\" width=\"600\" alt=\"Mobirise\">\n                    <div placeholder=\"\">\n                        <div class=\"mobirise-spinner\">\n                            <em></em>\n                            <em></em>\n                            <em></em>\n                        </div>\n                    </div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/03.jpg\" alt=\"Mobirise\">\n                </amp-img>\n                <amp-img class=\"carousel-img mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/04.jpg\" mbr-class=\"{'super-hide': imagesAmount < 4}\" height=\"400\" width=\"600\" alt=\"Mobirise\">\n                    <div placeholder=\"\">\n                        <div class=\"mobirise-spinner\">\n                            <em></em>\n                            <em></em>\n                            <em></em>\n                        </div>\n                    </div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/04.jpg\" alt=\"Mobirise\">\n                </amp-img>\n                <amp-img class=\"carousel-img mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/05.jpg\" mbr-class=\"{'super-hide': imagesAmount < 5}\" height=\"400\" width=\"600\" alt=\"Mobirise\">\n                    <div placeholder=\"\">\n                        <div class=\"mobirise-spinner\">\n                            <em></em>\n                            <em></em>\n                            <em></em>\n                        </div>\n                    </div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/05.jpg\" alt=\"Mobirise\">\n                </amp-img>\n                <amp-img class=\"carousel-img mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/06.jpg\" mbr-class=\"{'super-hide': imagesAmount < 6}\" height=\"400\" width=\"600\" alt=\"Mobirise\">\n                    <div placeholder=\"\">\n                        <div class=\"mobirise-spinner\">\n                            <em></em>\n                            <em></em>\n                            <em></em>\n                        </div>\n                    </div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/06.jpg\" alt=\"Mobirise\">\n                </amp-img>\n            </amp-carousel>\n        </div>\n    </div>\n</section>\n",
+          "_cid": "qNzT7yHhOe",
+          "_anchor": "carousel1-1u",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
