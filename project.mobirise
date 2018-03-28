@@ -123,6 +123,69 @@
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".google-map": {
+              "height": "25rem",
+              "position": "relative",
+              "iframe": {
+                "height": "100%",
+                "width": "100%"
+              },
+              "[data-state-details]": {
+                "color": "#6b6763",
+                "font-family": "Montserrat",
+                "height": "1.5em",
+                "margin-top": "-0.75em",
+                "padding-left": "1.25rem",
+                "padding-right": "1.25rem",
+                "position": "absolute",
+                "text-align": "center",
+                "top": "50%",
+                "width": "100%"
+              },
+              "&[data-state]": {
+                "background": "#e9e5dc"
+              },
+              "&[data-state=\"loading\"]": {
+                "[data-state-details]": {
+                  "display": "none"
+                },
+                "&::after": {}
+              }
+            },
+            ".mbr-section-subtitle": {
+              "padding-bottom": "2rem",
+              "color": "#7f7e7e"
+            },
+            ".mbr-section-title": {
+              "& when not (@showSubTitle)": {
+                "padding-bottom": "2rem"
+              }
+            },
+            ".map-placeholder": {
+              "display": "none"
+            },
+            "h4": {
+              "padding-top": "5rem",
+              "color": "#767676",
+              "text-align": "center"
+            }
+          },
+          "_name": "map1",
+          "_customHTML": "<section class=\"map\" group=\"Maps\" plugins=\"amp-main,amp-iframe\">\n\n    <mbr-parameters>   \n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n        <input type=\"map\" title=\"Map\" name=\"googleMap\">   \n    <!-- End block parameters -->\n    </mbr-parameters> \n\t<div class=\"container\" mbr-if=\"showTitle || showSubTitle\">\n        <h2 mbr-if=\"showTitle\" mbr-theme-style=\"display-5\" class=\"mbr-section-title align-center mbr-fonts-style mbr-bold\">\n            Full Width Google Map\n        </h2>\n        <h3 mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-fonts-style\" mbr-theme-style=\"display-6\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n        </h3>\n\t</div>\n    <div class=\"google-map\" mbr-map=\"googleMap\"></div>\n    <div class=\"map-placeholder\">\n        <!-- <h4>Google Map Initialization...</h4> -->    \n        <div placeholder=\"\">\n            <div class=\"mobirise-spinner\">\n                <em></em>\n                <em></em>\n                <em></em>\n                <em></em>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qNzpWGKqHL",
+          "_anchor": "map1-11",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
@@ -192,67 +255,6 @@
           "_global": false,
           "_once": false,
           "_params": {}
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".google-map": {
-              "height": "25rem",
-              "position": "relative",
-              "iframe": {
-                "height": "100%",
-                "width": "100%"
-              },
-              "[data-state-details]": {
-                "color": "#6b6763",
-                "font-family": "Montserrat",
-                "height": "1.5em",
-                "margin-top": "-0.75em",
-                "padding-left": "1.25rem",
-                "padding-right": "1.25rem",
-                "position": "absolute",
-                "text-align": "center",
-                "top": "50%",
-                "width": "100%"
-              },
-              "&[data-state]": {
-                "background": "#e9e5dc"
-              },
-              "&[data-state=\"loading\"]": {
-                "[data-state-details]": {
-                  "display": "none"
-                },
-                "&::after": {}
-              }
-            },
-            ".mbr-section-subtitle": {
-              "padding-bottom": "2rem",
-              "color": "#7f7e7e"
-            },
-            ".mbr-section-title": {
-              "& when not (@showSubTitle)": {
-                "padding-bottom": "2rem"
-              }
-            },
-            ".map-placeholder": {
-              "display": "none"
-            },
-            "h4": {
-              "padding-top": "5rem",
-              "color": "#767676",
-              "text-align": "center"
-            }
-          },
-          "_name": "map1",
-          "_customHTML": "<section class=\"map\" group=\"Maps\" plugins=\"amp-main,amp-iframe\">\n\n    <mbr-parameters>   \n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n        <input type=\"map\" title=\"Map\" name=\"googleMap\">   \n    <!-- End block parameters -->\n    </mbr-parameters> \n\t<div class=\"container\" mbr-if=\"showTitle || showSubTitle\">\n        <h2 mbr-if=\"showTitle\" mbr-theme-style=\"display-5\" class=\"mbr-section-title align-center mbr-fonts-style mbr-bold\">\n            Full Width Google Map\n        </h2>\n        <h3 mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-fonts-style\" mbr-theme-style=\"display-6\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n        </h3>\n\t</div>\n    <div class=\"google-map\" mbr-map=\"googleMap\"></div>\n    <div class=\"map-placeholder\">\n        <!-- <h4>Google Map Initialization...</h4> -->    \n        <div placeholder=\"\">\n            <div class=\"mobirise-spinner\">\n                <em></em>\n                <em></em>\n                <em></em>\n                <em></em>\n                <em></em>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "qNzpWGKqHL",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "map1-11"
         }
       ]
     }
